@@ -1,6 +1,7 @@
 /*
  * Use this code as a bookmarklet
  * When executed, click anywhere and it will try to find the related Ext.Component
+ * IDs need to be set by ExtJS (ext-comp-NNNN) or the selector won't match
  * The found component is stored in window.clickedComp
  */
 (function(){

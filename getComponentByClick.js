@@ -23,3 +23,9 @@
     }
     Ext.getBody().on('click', getCompByClick, null, {single : true});
 })();
+
+/*
+
+javascript:(function(){function getCompByClick(ev,el){var comp=getCompByEl(el);window.clickedComp=comp;console.log('Found parent (',comp,') for clicked element (',el,')');console.log('Stored in window.clickedComp');}function getCompByEl(el){var comp;while(!comp&&(el=Ext.get(el).up('[id^=ext-comp]'))){comp=Ext.ComponentMgr.all.find(function(c){return c.el&&(c.el.id==el.id);});}return comp;}Ext.getBody().on('click',getCompByClick,null,{single:true});})();
+
+*/
